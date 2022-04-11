@@ -1,0 +1,71 @@
+.profilepage__container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.profile__container {
+    display: flex;
+    justify-content: center;
+}
+
+.group_infoAndButtons {
+    border: 4px solid black;
+    padding: 20px;
+}
+
+.info__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.detail__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px
+}
+
+.info__pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 7px;
+    max-width: 300px;
+}
+
+h4 {
+    margin-right: 3px;
+}
+
+.profile__imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.profile__picture {
+    width: 200px;
+    height: 200px;
+}
+
+.button__group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv_desc {
+    margin-left: 5px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

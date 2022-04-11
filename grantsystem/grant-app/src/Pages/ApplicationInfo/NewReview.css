@@ -1,0 +1,21 @@
+.review__containter {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 700px;
+}
+
+.review__text {}
+
+.review__label {
+    font-weight: bold;
+}
+
+.button__group {
+    padding: 10px;
+}
+
+.error__message {
+    color: red;
+}

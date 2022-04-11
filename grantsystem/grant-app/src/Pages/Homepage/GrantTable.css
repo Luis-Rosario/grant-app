@@ -1,0 +1,79 @@
+    .table__wrapper {
+        overflow: auto;
+        overflow-y: scroll;
+        height: 500px;
+    }
+    
+    table th {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: #fff;
+    }
+    
+    .view__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .filter__container {
+        border: 1px solid #dee2e6;
+        height: 500px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter__content {}
+    
+    .filter__datePickerGroup {
+        padding: 5px;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+    
+    .select__sponsor {
+        padding-top: 20px
+    }
+    
+    th {
+        cursor: pointer;
+    }
+    
+    .filter__clearButton {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    
+    .slider__fundingContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .range_labels {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .filter__fundingGroup {
+        margin-top: 10px;
+    }
+    
+    .grantTable__Row:hover {
+        cursor: pointer;
+    }

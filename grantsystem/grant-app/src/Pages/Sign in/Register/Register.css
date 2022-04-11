@@ -1,0 +1,69 @@
+    .register__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 50px;
+    }
+    
+    .userType__radio {
+        flex-flow: row;
+        display: flex;
+    }
+    
+    .radio__pair {
+        flex-flow: row;
+        display: flex;
+        margin-left: 10px;
+    }
+    
+    .radio__pair input:hover {
+        cursor: pointer;
+    }
+    
+    .userType__header {
+        margin-top: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .userType__subheader {
+        margin-top: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .register__body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .form__inputPair {
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        border: 2px solid black;
+        padding: 20px;
+    }
+    
+    .register__button {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-group {
+        margin-right: 20px;
+    }
+    
+    #sponsorSelect {
+        width: 220px;
+        padding-top: 0px;
+    }

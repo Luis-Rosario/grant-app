@@ -1,0 +1,148 @@
+.home__screen {
+    position: relative;
+    min-height: 100vh;
+}
+
+.appInfo__container {
+    display: flex;
+    border: 1px solid #dee2e6;
+    overflow: auto;
+    height: 500px;
+}
+
+.appQuestion__container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border: 1px solid #dee2e6;
+    padding: 10px 0px 5px 10px;
+}
+
+.appInfo__details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.appInfo__wrapper {
+    padding: 10px;
+    max-width: 500px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.appInfo__row {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 0;
+    border-bottom: 1px solid gainsboro;
+}
+
+.appQuestion__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.question__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    max-width: 450px;
+    box-shadow: 1px 2px 3px 2px #DDD;
+}
+
+.question__group>* {
+    padding: 10px;
+}
+
+.question__text {
+    justify-content: center;
+    background: #333;
+    color: white;
+}
+
+.question__text h5 {
+    margin: 0;
+}
+
+.question__answear {
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.draft__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 420px;
+    position: absolute;
+    background: white;
+}
+
+.ans_tag {}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.finalClass__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.finalClass__container label {
+    font-weight: bold;
+}
+
+.finalClass__buttons Button {
+    margin: 5px;
+    margin-top: -9px;
+}
+
+.appInfo__row h6 {
+    margin-left: 5px;
+}
+
+.appInfo__wrapper h3 {
+    margin-bottom: 30px;
+}
+
+.appInfo__row h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.question__text h5 {
+    font-size: 1.1rem;
+}
+
+.question__answear h6 {
+    color: #555;
+}
+
+.appInfo__container>* {
+    width: 100%;
+}
+
+.question__answear::after {
+    content: '';
+    padding: 0px;
+    position: absolute;
+    bottom: -15px;
+    left: -5px;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #EEE;
+    transform: rotate(90deg);
+}
+
+.draft__buttons button {
+    width: auto;
+    margin-left: 5px;
+}

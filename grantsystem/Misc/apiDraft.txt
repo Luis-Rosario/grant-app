@@ -1,0 +1,101 @@
+Student
+	-Aplications
+		-id
+	-Institution
+
+Grant
+	-id
+		-aplications
+			-student
+		-result (res final?)
+		-evaluation_pannel
+			-reviewers
+
+
+Institution
+	-students
+	-reviewers
+
+Aplications
+	-Grant
+	-Evaluation_pannel
+		-Reviewers
+			-evaluation
+	-Status ()
+
+Reviewer
+	-panels
+	-reviews
+	-id
+
+
+----------------------------------------------------------------------
+
+GET /students												-- obter students na plataforma?
+GET /student/{studentID}			                        -- obter student
+GET /student/{studentID}/application                        -- obter aplications todas do student
+
+POST /student                                               -- add student
+
+PUT /student/{studentID}                                    -- update student objct (update info generica)
+PUT /student/{studentID}/application 						-- Adicionar grant aplication ao student
+
+-------------------------------------------------------------------------------------------------------
+
+GET /grant													-- ver grants
+GET /grant/{grantID}				                        -- obter info grant
+GET /grant/{grantID}/application							-- obter applications  (SEC)
+GET /grant/{grantID}/application/{applicationID}            -- obter info referente a uma aplication
+GET /grant/{grantID}/panel                                  -- obter info painel de reviewers   
+
+POST /grant 											    -- add grant
+POST /grant/{grantID}/application 							-- add application
+
+PUT /grant/{grantID}										-- update grant  (STATUS)
+PUT /grant/{grantID}/application/{applicationID}			-- update application (STATUS)
+
+DELETE /grant/{grantID}										-- delete grant
+-----------------------------------------------------------------------------------------------------
+
+GET /institution 			                                -- obter institutions
+GET /institution/{institutionID}                            -- obter institutions info 
+GET /institution/{institutionID}/students                   -- obter institutions students 
+GET /institution/{institutionID}/reviewers                  -- obter institutions students 
+
+POST /institution                                           -- add institutions
+
+PUT /institution                                            -- update institution objct (update info generica)
+
+------------------------------------------------------------------------------------------------------------
+
+GET /reviewer 			                                    -- obter reviewrs
+GET /reviewer/{reviewerID}                               	-- obter reviewerID info 
+GET /reviewer/{reviewerID}/evaluations                   	-- obter evaluations do reviewer 
+GET /reviewer/{reviewerID}/evaluations/{evalID}             -- obter info evaluation info  
+
+POST /reviewer                                           	-- add reviewer
+POST /reviewer/{reviewerID}/evaluations 	                -- add evaluation
+
+PUT /reviewer                                            	-- update reviewr objct (update info generica)
+PUT /reviewer/{reviewerID}/evaluations						-- update evaluations of reviewer
+
+------------------------------------------------------------------------------------------------------------
+
+				<AQUI N SEI SE SERA MELHOR JUNTAR OS ACESSOS DA INFO NOS ACESSOS AOS GRANTS> ?
+
+GET /evaluation 			                                -- obter evaluations
+GET /evaluation/{evalID}                               		-- obter evaluation info  
+
+POST /evaluation                                           	-- add evaluation
+
+PUT /evaluation                                            	-- update evaluation objct (update info generica)
+
+--------------------------------------------------------------------------------------------------------------------
+
+GET /panel 			                                		-- obter panels
+GET /panel/{panelID}                               			-- obter panel info  
+
+POST /panel                                           	    -- add evaluation
+
+put /panel                                                  -- update evaluation objct (update info generica)			                                    
+PUT /panel/member                                        	-- update panel members			

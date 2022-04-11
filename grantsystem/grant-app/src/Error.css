@@ -1,0 +1,31 @@
+.main__container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.error__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.button__home {
+    margin-top: 50px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.message__container {
+    display: flex;
+    border: 2px black solid;
+    padding: 20px;
+    margin-top: 15px;
+}

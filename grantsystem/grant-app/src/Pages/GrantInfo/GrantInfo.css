@@ -1,0 +1,112 @@
+.grant__container {
+    display: flex;
+    justify-content: center;
+}
+
+.grantInfo__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 30px;
+    position: relative;
+}
+
+.grant__title {
+    padding: 10px;
+}
+
+.grant__information {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #AAA;
+}
+
+.grant__description {
+    overflow-y: scroll;
+    height: 400px;
+    width: 600px;
+    padding: 10px;
+}
+
+.grantdescBox__container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 0px 0px;
+}
+
+.grant__boxItem {
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.grant__boxItem h5 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.apply__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.form__title {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.modal_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 600px;
+}
+
+.formModal__container {
+    align-items: center;
+}
+
+.button__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    padding: 0px
+}
+
+.mandatory__marker {
+    color: red;
+}
+
+.editDraft__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.closed__message {
+    margin: 10px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.closed__message h4 {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}

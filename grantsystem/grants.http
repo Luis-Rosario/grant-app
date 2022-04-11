@@ -1,0 +1,540 @@
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Bolsa de Investigação na area da Verificação de Software",
+  "openingDate": "2020-11-18",
+  "deadline": "2021-01-20",
+  "description": "Nesta investigaçao irá ser realizada na FCT",
+  "funding": 20000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "Porque acha que merece a bolsa?",
+      "type": "string",
+      "mandatory": true
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 12,
+  "sponsorName": "Premios Nobel"
+}
+
+###
+POST http://localhost:8080/application
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "applicationID": 0,
+  "submissionDate": "2020-11-20",
+  "status": "SUBMITTED",
+  "responses": [
+    {
+      "question": {
+          "fieldDescription": "Porque acha que merece a bolsa?",
+          "type": "string",
+          "mandatory": true
+        },
+      "response": "Porque sou muito bom!"
+    }
+  ],
+  "grantID": 1,
+  "studentID": 2,
+  "reviews": []
+}
+
+###
+POST http://localhost:8080/application
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "applicationID": 0,
+  "submissionDate": "2020-12-03",
+  "status": "DRAFT",
+  "responses": [
+    {
+      "question": {
+        "fieldDescription": "Porque acha que merece a bolsa?",
+        "type": "string",
+        "mandatory": true
+      },
+      "response": "Porque sou muito trabalhador."
+    }
+  ],
+  "grantID": 1,
+  "studentID": 3,
+  "reviews": []
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Bolsa para aprendiz de carpinteiro",
+  "openingDate": "2020-11-21",
+  "deadline": "2021-02-03",
+  "description": "Com esta bolsa o aluno irá fazer parte de um projeto de carpintaria.",
+  "funding": 80000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "No seu ponto de vista, o que e ser carpinteiro?",
+      "type": "string",
+      "mandatory": true
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 12,
+  "sponsorName": "Premios Nobel"
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Investigação na area da Aprendizagem Automática",
+  "openingDate": "2020-12-02",
+  "deadline": "2021-01-23",
+  "description": "Investigação muito dificil e para pessoas com tempo",
+  "funding": 50000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "Quais são os seus conhecimentos na area em questão?",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "fieldDescription": "Qual a sua area de preferencia?",
+      "type": "string",
+      "mandatory": false
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 13,
+  "sponsorName": "Patricio Patrocinador"
+}
+
+###
+POST http://localhost:8080/application
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "applicationId": 0,
+  "submissionDate": "2020-12-25",
+  "status": "SUBMITTED",
+  "responses": [
+    {
+      "question": {
+        "fieldDescription": "Quais são os seus conhecimentos na area em questão?",
+        "type": "string",
+        "mandatory": true
+      },
+      "response": "Sei muito python"
+    },
+    {
+      "question": {
+        "fieldDescription": "Qual a sua area de preferencia?",
+        "type": "string",
+        "mandatory": false
+      },
+      "response": "Clustering"
+    }
+  ],
+  "grantID": 3,
+  "studentID": 4,
+  "reviews": []
+}
+
+### 500
+POST http://localhost:8080/application
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "applicationId": 0,
+  "submissionDate": "2021-01-12",
+  "status": "SUBMITTED",
+  "responses": [
+    {
+      "question": {
+        "fieldDescription": "Quais são os seus conhecimentos na area em questão?",
+        "type": "string",
+        "mandatory": true
+      },
+      "response": "Não sei nada sobre o tema."
+    },
+    {"question": {
+      "fieldDescription": "Qual a sua area de preferencia?",
+      "type": "string",
+      "mandatory": false
+    },
+    "response": "Clustering"
+    }
+  ],
+  "grantID": 3,
+  "studentID":5,
+  "reviews": []
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Bolsa para sentar à frente do computador e jogar",
+  "openingDate": "2020-11-25",
+  "deadline": "2021-01-27",
+  "description": "Jogar todo o tipo de jogos, desde PC a Gameboy",
+  "funding": 100000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "Quantas horas por dia passa a jogar?",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "fieldDescription": "Qual a sua plataforma de jogos favorita?",
+      "type": "string",
+      "mandatory": false
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 13,
+  "sponsorName": "Patricio Patrocinador"
+}
+
+###
+POST http://localhost:8080/application
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "applicationId": 0,
+  "submissionDate": "2020-12-29",
+  "status": "SUBMITTED",
+  "responses": [
+    {
+      "question": {
+        "fieldDescription": "Quantas horas por dia passa a jogar?",
+        "type": "string",
+        "mandatory": true
+      },
+      "response": "No minimo 5h por dia."
+    },
+    {
+      "question": {
+        "fieldDescription": "Qual a sua plataforma de jogos favorita?",
+        "type": "string",
+        "mandatory": false
+      },
+      "response": "Atari"
+    }
+  ],
+  "grantID": 4,
+  "studentID": 6,
+  "reviews": []
+}
+
+###
+POST http://localhost:8080/application
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "applicationId": 0,
+  "submissionDate": "2021-01-20",
+  "status": "SUBMITTED",
+  "responses": [
+    {
+      "question": {
+        "fieldDescription": "Quantas horas por dia passa a jogar?",
+        "type": "string",
+        "mandatory": true
+      },
+      "response": "3h por dia, não posso mais por causa da vista."
+    },
+    {
+      "question": {
+        "fieldDescription": "Qual a sua plataforma de jogos favorita?",
+        "type": "string",
+        "mandatory": false
+      },
+      "response": "XBox"
+    }
+  ],
+  "grantID": 4,
+  "studentID": 7,
+  "reviews": []
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Bolsa na area da Consecao e Implementacao de Aplicacoes na Internet",
+  "openingDate": "2020-12-15",
+  "deadline": "2021-02-02",
+  "description": "Nesta investigacao o aluno ira implementar um sistema de grants",
+  "funding": 70000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "Qual é a sua experiencia em kotlin e Spring?",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "fieldDescription": "Qual é a sua experiencia em react+typescritp?",
+      "type": "string",
+      "mandatory": true
+    }
+  ],
+  "applications": 0,
+
+  "sponsorId": 14,
+  "sponsorName": "Governo Portugues"
+
+}
+
+###
+POST http://localhost:8080/application
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "applicationId": 0,
+  "submissionDate": "2020-12-26",
+  "status": "DRAFT",
+  "responses": [
+    {
+      "question": {
+        "fieldDescription": "Qual é a sua experiencia em kotlin e Spring?",
+        "type": "string",
+        "mandatory": true
+      },
+      "response": "Muita, sou um master!"
+    },
+    {
+      "question": {
+        "fieldDescription": "Qual é a sua experiencia em react+typescritp?",
+        "type": "string",
+        "mandatory": true
+      },
+      "response": "Dou uns toques aqui e ali"
+    }
+  ],
+  "grantID": 5,
+  "studentID": 8,
+  "reviews": []
+}
+
+###
+POST http://localhost:8080/application
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "applicationId": 0,
+  "submissionDate": "2021-01-15",
+  "status": "SUBMITTED",
+  "responses": [
+    {
+      "question": {
+        "fieldDescription": "Qual é a sua experiencia em kotlin e Spring?",
+        "type": "string",
+        "mandatory": true
+      },
+      "response": "Sou uma máquina em spring"
+    },
+    {
+      "question": {
+        "fieldDescription": "Qual é a sua experiencia em react+typescritp?",
+        "type": "string",
+        "mandatory": true
+      },
+      "response": "É a minha cena!"
+    }
+  ],
+  "grantID": 5,
+  "studentID": 9,
+  "reviews": []
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Participação na elaboração do Plano de Vacinação do Covid-19",
+  "openingDate": "2020-12-15",
+  "deadline": "2020-12-18",
+  "description": "Vamos matar este virus!",
+  "funding": 70000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "Usa mascara?",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "fieldDescription": "Já teve Covid-19?",
+      "type": "string",
+      "mandatory": true
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 14,
+  "sponsorName": "Governo Portugues"
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Desenvolvimento de uma framework de JS que visa a eficiência de desenvolvimento",
+  "openingDate": "2020-12-15",
+  "deadline": "2021-02-02",
+  "description": "Este trabalho ira ser levado a cabo ao longo de 1 ano e necesitamos de membros para o projeto que sejam proeficientes em JS e as suas frameworks atuais",
+  "funding": 20000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "Qual é a sua experiencia em JS e Typescript?",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "fieldDescription": "Qual é a sua familiaridade com frameworks de JS?",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "fieldDescription": "Qual é a sua motivação para pertencer a este projeto?",
+      "type": "string",
+      "mandatory": false
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 15,
+  "sponsorName": "CERN"
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Bolsa para Divisor de Atomos",
+  "openingDate": "2020-11-21",
+  "deadline": "2021-02-25",
+  "description": "Com esta bolsa o aluno irá dividir atomos.",
+  "funding": 80000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "Como se divide um atomo?",
+      "type": "string",
+      "mandatory": true
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 15,
+  "sponsorName": "CERN"
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Bolsa para aprendiz de fuzileiro",
+  "openingDate": "2020-11-21",
+  "deadline": "2020-12-18",
+  "description": "Com esta bolsa o aluno irá fazer parte de um projeto de fuzileiro.",
+  "funding": 80000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "No seu ponto de vista, o que e ser fuzileiro?",
+      "type": "string",
+      "mandatory": true
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 16,
+  "sponsorName": "NASA"
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Bolsa para construir um foguetão",
+  "openingDate": "2020-11-22",
+  "deadline": "2021-01-12",
+  "description": "Nesta investigacao o aluno participar na construção de um foguetão",
+  "funding": 70000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "Qual é a sua experiencia com foguetões?",
+      "type": "string",
+      "mandatory": true
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 16,
+  "sponsorName": "NASA"
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "grantId": 0,
+  "title": "Desenvolvimento de uma framework de gestão de recursos distribuidos",
+  "openingDate": "2020-12-15",
+  "deadline": "2021-02-02",
+  "description": "Este trabalho ira ser levado a cabo ao longo de 1 ano e necesitamos de membros para o projeto jovem e dinâmico",
+  "funding": 21000,
+  "applicationQuestions": [
+    {
+      "fieldDescription": "Tem ideia do que são recursos distribuidos?",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "fieldDescription": "É um utilizador proeficiente em babel?",
+      "type": "string",
+      "mandatory": true
+    }
+  ],
+  "applications": 0,
+  "sponsorId": 12,
+  "sponsorName": "Premios Nobel"
+}
+
+###

@@ -1,0 +1,49 @@
+.page__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+.table__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.panel__list {
+    width: 300px;
+    overflow-y: scroll;
+    height: 500px;
+    border: 1px solid #dee2e6;
+}
+
+.member__list {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #dee2e6;
+}
+
+.application__list {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #dee2e6;
+    overflow-y: scroll;
+}
+
+.table__row:hover {
+    cursor: pointer;
+}
+
+.table__row td.active {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

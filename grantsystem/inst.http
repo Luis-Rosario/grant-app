@@ -1,0 +1,70 @@
+POST http://localhost:8080/institution
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+"id": 0,
+"name":  "FCT",
+"email": "helpdesk@fct.pt",
+"phoneNumb": "242452951",
+"students": [],
+"reviewers": []
+}
+
+###
+POST http://localhost:8080/institution
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 1,
+  "name": "IST",
+  "email": "helpdesk@ist.pt",
+  "phoneNumb": "265354814",
+  "students": [],
+  "reviewers": []
+}
+
+###
+POST http://localhost:8080/institution
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 2,
+  "name": "ISCTE",
+  "email": "helpdesk@iscte.pt",
+  "phoneNumb": "242359145",
+  "students": [],
+  "reviewers": []
+}
+
+###
+POST http://localhost:8080/institution
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 3,
+  "name": "UL",
+  "email": "helpdesk@ul.pt",
+  "phoneNumb": "251369428",
+  "students": [],
+  "reviewers": []
+}
+
+###
+POST http://localhost:8080/institution
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 4,
+  "name": "SBE",
+  "email": "helpdesk@sbe.pt",
+  "phoneNumb": "281623751",
+  "students": [],
+  "reviewers": []
+}
+
+###

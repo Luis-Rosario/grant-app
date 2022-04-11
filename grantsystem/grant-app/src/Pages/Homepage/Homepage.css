@@ -1,0 +1,30 @@
+.home__screen {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.home__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    min-height: 100%;
+}
+
+Button {
+    width: 130px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

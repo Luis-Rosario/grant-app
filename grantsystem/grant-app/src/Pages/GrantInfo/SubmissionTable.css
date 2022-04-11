@@ -1,0 +1,16 @@
+.content__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table__wrapper {
+    overflow-y: scroll;
+    border-left: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6
+}
+
+tr:hover {
+    cursor: pointer;
+}

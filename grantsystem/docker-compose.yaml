@@ -1,0 +1,74 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db'
+
+      MYSQL_USER: 'user'
+
+      MYSQL_PASSWORD: 'pw'
+
+      MYSQL_ROOT_PASSWORD: 'pw'
+
+    ports:
+      - 6603:3306
+    expose:
+      - 3306
+    volumes:
+      - sql_data
+    networks:
+      - backend-network
+
+  admin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8082:80
+    environment:
+      - PMsA_ARBITRARY=1
+    networks:
+      - backend-network
+
+
+  backend:
+    image: grantsystem-backend
+    networks:
+      - backend-network
+      - frontend-network
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/GrantSystem?createDatabaseIfNotExist=true
+    depends_on:
+      - db
+
+  frontend:
+    image: grantsystem-frontend
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
+    depends_on:
+      - backend
+    networks:
+      - frontend-network
+
+# Names our volume
+volumes:
+  sql_data:
+    driver: local
+    name: my-db
+
+networks:
+  backend-network:
+    driver: bridge
+    name: backend-network
+
+
+  frontend-network:
+    driver: bridge
+    name: frontend-network

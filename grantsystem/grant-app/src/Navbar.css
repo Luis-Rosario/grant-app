@@ -1,0 +1,106 @@
+.nav__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    margin-bottom: 40px;
+    border-bottom: 2px solid steelblue;
+    background-color: rgb(0, 88, 139);
+    padding: 10px;
+}
+
+.nav__leftSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.nav__title {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav__title a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav__rightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav__profileIcon {
+    font-size: 2.5em;
+    margin-right: 10px;
+    color: white;
+}
+
+.nav__signIn {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav__signIn:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo__picture {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+}
+
+.nav__home {
+    color: white;
+}
+
+.nav__home:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#dropdown-basic-button {
+    width: 30px;
+    height: 30px;
+}
+
+.nav__profileGroup {
+    display: flex;
+    align-items: center;
+}
+
+.nav__profileName {
+    color: white;
+    margin-right: 15px;
+}
+
+.nav__link {
+    color: white;
+}
+
+.nav__dropItem {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__dropItem:hover {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.dropdown__group {
+    margin-left: 0px;
+}
+
+.debug {
+    margin-right: 500px;
+}

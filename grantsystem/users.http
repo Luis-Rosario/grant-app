@@ -1,0 +1,454 @@
+POST http://localhost:8080/signup
+Content-Type: application/json
+
+{
+  "id": 0,
+  "address": "Rua das Meloas",
+  "birthDate": "1998-04-29",
+  "institutionId": 2,
+  "name": "Joao Fernandes",
+  "email": "jpf.fernandes@fct.pt",
+  "course": "MIEI",
+  "cvId": 0,
+  "applications": [],
+  "username": "jpf.fernandes",
+  "password": "jpf.fernandes",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Morangos",
+  "birthDate": "1998-10-05",
+  "institutionId": 2,
+  "name": "Luis Rosario",
+  "email": "lf.rosario@fct.unl.pt",
+  "course": "MIEI",
+  "cvId": 0,
+  "applications": [],
+  "username": "lf.rosario",
+  "password": "lf.rosario",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua dos Abacaxis",
+  "birthDate": "1997-02-17",
+  "institutionId": 3,
+  "name": "João Monteiro",
+  "email": "jm.monteiro@ist.com",
+  "course": "LEEC",
+  "cvId": 0,
+  "applications": [],
+  "username": "lm.monteiro",
+  "password": "jm.monteiro",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Pego das nuvens",
+  "birthDate": "1996-01-09",
+  "institutionId": 3,
+  "name": "José Miguel",
+  "email": "j.miguel@ist.pt",
+  "course": "IT",
+  "cvId": 0,
+  "applications": [],
+  "username": "j.miguel",
+  "password": "j.miguel",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das cestos",
+  "birthDate": "1997-05-22",
+  "institutionId": 4,
+  "name": "Andre costa",
+  "email": "a.costa@iscte.pt",
+  "course": "CTS",
+  "cvId": 0,
+  "applications": [],
+  "username": "a.costa",
+  "password": "a.costa",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Travessa das altas novas",
+  "birthDate": "1995-09-25",
+  "institutionId": 4,
+  "name": "Inês André",
+  "email": "i.andre@iscte.pt",
+  "course": "HIST",
+  "cvId": 0,
+  "applications": [],
+  "username": "i.andre",
+  "password": "i.andre",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Travessa das altas novas",
+  "birthDate": "1999-02-28",
+  "institutionId": 5,
+  "name": "Zacarias Lopes",
+  "email": "z.lopes@ul.pt",
+  "course": "ELEC",
+  "cvId": 0,
+  "applications": [],
+  "username": "z.lopes",
+  "password": "z.lopes",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Travessa das altas novas",
+  "birthDate": "1994-05-12",
+  "institutionId": 5,
+  "name": "Ana Nunes",
+  "email": "a.nunes@ul.pt",
+  "course": "CONT",
+  "cvId": 0,
+  "applications": [],
+  "username": "a.nunes",
+  "password": "a.nunes",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Travessa das altas novas",
+  "birthDate": "1995-09-25",
+  "institutionId": 6,
+  "name": "Bernardo Ricardo",
+  "email": "b.ricardo@sbe.pt",
+  "course": "GEST",
+  "cvId": 0,
+  "applications": [],
+  "username": "b.ricardo",
+  "password": "b.ricardo",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Travessa das altas novas",
+  "birthDate": "2000-07-30",
+  "institutionId": 6,
+  "name": "Duarte Afonso",
+  "email": "d.afonso@sbe.pt",
+  "course": "MKT",
+  "cvId": 0,
+  "applications": [],
+  "username": "d.afonso",
+  "password": "d.afonso",
+  "roles": ["STUDENT"]
+}
+
+###
+POST http://localhost:8080/sponsor
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "sponsorID": 0,
+  "name": "Premios Nobel",
+  "email": "premios_nobel@email.pt",
+  "phoneNumber": 263486129,
+  "username": "nobel",
+  "password": "nobel",
+  "roles": ["SPONSOR"]
+}
+
+###
+POST http://localhost:8080/sponsor
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "sponsorID": 0,
+  "name": "Patricio Patrocinador",
+  "email": "patrocinador@email.pt",
+  "phoneNumber": 284159753,
+  "username": "patrocinador",
+  "password": "patrocinador",
+  "roles": ["SPONSOR"]
+}
+
+###
+POST http://localhost:8080/sponsor
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "sponsorID": 0,
+  "name": "Governo Portugues",
+  "email": "governo@email.pt",
+  "phoneNumber": 212658258,
+  "username": "governo",
+  "password": "governo",
+  "roles": ["SPONSOR"]
+}
+
+###
+POST http://localhost:8080/sponsor
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "sponsorID": 0,
+  "name": "CERN",
+  "email": "cern@email.pt",
+  "phoneNumber": 259214685,
+  "username": "cern",
+  "password": "cern",
+  "roles": ["SPONSOR"]
+}
+
+###
+POST http://localhost:8080/sponsor
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "sponsorID": 0,
+  "name": "NASA",
+  "email": "nasa@email.pt",
+  "phoneNumber": 235215486,
+  "username": "nasa",
+  "password": "nasa",
+  "roles": ["SPONSOR"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Peras",
+  "birthDate": "1980-05-22",
+  "institutionId": 2,
+  "name": "Joao Seco",
+  "email": "seco@fct.pt",
+  "evals": [],
+  "username": "seco.joao",
+  "password": "seco.joao",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Macieiras",
+  "birthDate": "1995-11-30",
+  "institutionId": 2,
+  "name": "Eduardo Geraldo",
+  "email": "geraldo@fct.pt",
+  "evals": [],
+  "username": "geraldo.edu",
+  "password": "geraldo.edu",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Pereiras",
+  "birthDate": "1985-06-08",
+  "institutionId": 3,
+  "name": "Joao Leitao",
+  "email": "leitao@ist.pt",
+  "evals": [],
+  "username": "leitao.joao",
+  "password": "leitao.joao",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Nespras",
+  "birthDate": "1975-04-16",
+  "institutionId": 3,
+  "name": "Miguel Goulao",
+  "email": "gou@ist.pt",
+  "evals": [],
+  "username": "goulao.miguel",
+  "password": "goulao.miguel",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Oliveiras",
+  "birthDate": "1970-06-23",
+  "name": "Nuno Preguiça",
+  "institutionId": 4,
+  "email": "per@iscte.pt",
+  "evals": [],
+  "username": "preguica.nuno",
+  "password": "preguica.nuno",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Vinhas",
+  "birthDate": "1987-12-20",
+  "institutionId": 4,
+  "name": "Sofia Cavaco",
+  "email": "sof@iscte.pt",
+  "evals": [],
+  "username": "cavaco.sofia",
+  "password": "cavaco.sofia",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Cerejas",
+  "birthDate": "1950-03-15",
+  "institutionId": 5,
+  "name": "Jose Legatheaux",
+  "email": "leg@ul.pt",
+  "evals": [],
+  "username": "legatheaux.jose",
+  "password": "legatheaux.jose",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Aboboras",
+  "birthDate": "1973-09-26",
+  "institutionId": 5,
+  "name": "Luis Caires",
+  "email": "cai@ul.pt",
+  "evals": [],
+  "username": "caires.luis",
+  "password": "caires.luis",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NDMxMCwiaWF0IjoxNjA4MjA4MzEwLCJ1c2VybmFtZSI6ImEifQ.iksYo4hHxVC6k3ekYlWCILNsdQd97ak7n2boiQ317EE
+
+{
+  "id": 0,
+  "address": "Rua das Castanhas",
+  "birthDate": "1975-04-15",
+  "institutionId": 6,
+  "name": "João Lourenço",
+  "email": "lour@sbe.pt",
+  "evals": [],
+  "username": "lourenco.joao",
+  "password": "lourenco.joao",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwODI0NTAxOSwiaWF0IjoxNjA4MjA5MDE5LCJ1c2VybmFtZSI6ImEifQ.5MiMb0z2eHgdhk9jDOzNJ1YLEWyB51-W2gTdGrIxg2M
+
+{
+  "id": 0,
+  "address": "Rua das Bolotas",
+  "birthDate": "1977-06-29",
+  "institutionId": 6,
+  "name": "Antonio Ravara",
+  "email": "rav@sbe.pt",
+  "evals": [],
+  "username": "ravara.antonio",
+  "password": "ravara.antonio",
+  "roles": ["REVIEWER"]
+}
+
+###

@@ -1,0 +1,8 @@
+* {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+td {
+    max-width: 300px;
+    word-wrap: break-word;
+}

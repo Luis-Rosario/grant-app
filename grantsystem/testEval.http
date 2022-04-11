@@ -1,0 +1,238 @@
+POST http://localhost:8080/institution
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfU1RVREVOVCJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9BRE1JTiJ9XSwiZXhwIjoxNjA3MTM1OTg5LCJpYXQiOjE2MDcwOTk5ODksInVzZXJuYW1lIjoianBmLmZlcm5hbmRlcyJ9.edPllHxpjxJ0zE3wCEFEp-r_B_zuIZZhoGhO7fEnpbM
+
+{
+  "email": "fct@fct",
+  "id": 0,
+  "name": "FCT",
+  "phoneNumb": "2222",
+  "reviewers": [],
+  "students": []
+}
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfU1RVREVOVCJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9BRE1JTiJ9XSwiZXhwIjoxNjA3MTM1OTg5LCJpYXQiOjE2MDcwOTk5ODksInVzZXJuYW1lIjoianBmLmZlcm5hbmRlcyJ9.edPllHxpjxJ0zE3wCEFEp-r_B_zuIZZhoGhO7fEnpbM
+
+{
+"address": "RUA",
+"applications": [
+],
+"birthDate": "2020-10-17",
+"course": "MIEI",
+"cvId": 0,
+"email": "jmpss",
+"id": 0,
+"institutionId": 1,
+"name": "JOAO MIGUEsL",
+"password": "a",
+"roles": ["ADMIN", "STUDENT"],
+"username": "Luis"
+}
+
+
+###
+POST http://localhost:8080/sponsor
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwNjgwMjgxOCwiaWF0IjoxNjA2NzY2ODE4LCJ1c2VybmFtZSI6InN0cmluZyJ9.PJiWLJnadWiGhdnZc-zZWUibRpUIu9IBjx3FvYwwEMs
+
+
+{
+  "email": "emal@pt",
+  "name": "MANEL O PRATOCIONADOR",
+  "phoneNumber": "9999",
+  "sponsorID": 0,
+  "password": "gg",
+  "username": "bfff",
+  "roles": ["SPONSOR"]
+}
+
+###
+POST http://localhost:8080/grant
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImV4cCI6MTYwNjgwMjgxOCwiaWF0IjoxNjA2NzY2ODE4LCJ1c2VybmFtZSI6InN0cmluZyJ9.PJiWLJnadWiGhdnZc-zZWUibRpUIu9IBjx3FvYwwEMs
+
+{
+  "applicationQuestions": [
+    {
+      "fieldDescription": "string",
+      "mandatory": true,
+      "type": "string"
+    }
+  ],
+  "applications": [
+  ],
+  "deadline": "2020-10-18",
+  "description": "string",
+  "funding": 100000,
+  "grantId": 0,
+  "openingDate": "2020-10-17",
+  "sponsorId": 2,
+  "title": "OLA",
+  "sponsorName": ""
+}
+
+###
+POST http://localhost:8080/application
+Content-Type: application/json
+Authorization: Basic Luis a
+
+{
+  "applicationID": 0,
+  "grantID": 1,
+  "responses": [
+    {
+      "response": "string"
+    }
+  ],
+  "status": "string",
+  "studentID": 1,
+  "submissionDate": "2020-10-17",
+  "reviews": []
+}
+
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Basic Luis a
+
+{
+  "address": "ruaa",
+  "birthDate": "2020-10-26",
+  "email": "rev0@rev",
+  "evals": [],
+  "id": 0,
+  "institutionID": 1,
+  "name": "EVAL1",
+  "username": "aa",
+  "password": "l",
+  "roles": ["REVIEWER"]
+}
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Basic Luis a
+
+{
+  "address": "ruaa",
+  "birthDate": "2020-10-26",
+  "email": "rev1@rev",
+  "evals": [],
+  "id": 0,
+  "institutionID": 1,
+  "name": "EVAL1",
+  "username": "aaa",
+  "password": "l",
+  "roles": ["REVIEWER"]
+}
+
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Basic Luis a
+
+{
+  "address": "ruaa",
+  "birthDate": "2020-10-26",
+  "email": "rev2@rev",
+  "evals": [],
+  "id": 0,
+  "institutionID": 1,
+  "name": "EVAL1",
+  "username": "aaaa",
+  "password": "l",
+  "roles": ["REVIEWER"]
+}
+
+
+###
+POST http://localhost:8080/reviewer
+Content-Type: application/json
+Authorization: Basic Luis a
+
+{
+  "address": "ruaa",
+  "birthDate": "2020-10-26",
+  "email": "rev3@rev",
+  "evals": [],
+  "id": 0,
+  "institutionID": 1,
+  "name": "EVAL1",
+  "username": "aaaaa",
+  "password": "l",
+  "roles": ["REVIEWER"]
+}
+
+
+
+###
+POST http://localhost:8080/panel
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfU1RVREVOVCJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9BRE1JTiJ9XSwiZXhwIjoxNjA3MTM1OTg5LCJpYXQiOjE2MDcwOTk5ODksInVzZXJuYW1lIjoianBmLmZlcm5hbmRlcyJ9.edPllHxpjxJ0zE3wCEFEp-r_B_zuIZZhoGhO7fEnpbM
+
+
+{
+  "grant": 1,
+  "panelChair": 3,
+  "panelID": 0,
+  "reviewer": [
+    3,4,5,6
+  ]
+}
+
+###
+POST http://localhost:8080/eval
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfU1RVREVOVCJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9BRE1JTiJ9XSwiZXhwIjoxNjA3MTM1OTg5LCJpYXQiOjE2MDcwOTk5ODksInVzZXJuYW1lIjoianBmLmZlcm5hbmRlcyJ9.edPllHxpjxJ0zE3wCEFEp-r_B_zuIZZhoGhO7fEnpbM
+
+{
+  "applicationId": 1,
+  "grantId": 1,
+  "id": 0,
+  "revId": 5,
+  "status": 2
+}
+
+###
+POST http://localhost:8080/eval
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfU1RVREVOVCJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9BRE1JTiJ9XSwiZXhwIjoxNjA3MTM1OTg5LCJpYXQiOjE2MDcwOTk5ODksInVzZXJuYW1lIjoianBmLmZlcm5hbmRlcyJ9.edPllHxpjxJ0zE3wCEFEp-r_B_zuIZZhoGhO7fEnpbM
+
+{
+  "applicationId": 1,
+  "grantId": 1,
+  "id": 0,
+  "revId": 3,
+  "status": 2
+}
+
+###
+POST http://localhost:8080/eval
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfU1RVREVOVCJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9BRE1JTiJ9XSwiZXhwIjoxNjA3MTM1OTg5LCJpYXQiOjE2MDcwOTk5ODksInVzZXJuYW1lIjoianBmLmZlcm5hbmRlcyJ9.edPllHxpjxJ0zE3wCEFEp-r_B_zuIZZhoGhO7fEnpbM
+
+{
+  "applicationId": 1,
+  "grantId": 1,
+  "id": 0,
+  "revId": 4,
+  "status": 2
+}
+
+###
+POST http://localhost:8080/eval
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKU09OIFdlYiBUb2tlbiBmb3IgQ0lBSSAyMDE5LzIwIiwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfU1RVREVOVCJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9BRE1JTiJ9XSwiZXhwIjoxNjA3MTM1OTg5LCJpYXQiOjE2MDcwOTk5ODksInVzZXJuYW1lIjoianBmLmZlcm5hbmRlcyJ9.edPllHxpjxJ0zE3wCEFEp-r_B_zuIZZhoGhO7fEnpbM
+
+{
+  "applicationId": 1,
+  "grantId": 1,
+  "id": 0,
+  "revId": 6,
+  "status": 2
+}
